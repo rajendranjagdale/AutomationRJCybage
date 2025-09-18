@@ -5,8 +5,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.slf4j.helpers.Reporter;
-
 import web.DriverLibrary;
 
 public class HomePage extends BasePage {
@@ -49,17 +47,6 @@ public class HomePage extends BasePage {
 		}
 
 		linkNamesActual.remove(0);
-
-		for (int i = 0; i < linkNamesActual.size(); i++) {
-			if (linkNamesActual.get(i).equals(linkNames.get(i))) {
-				Reporter.info(
-						"Success! Actual link: " + linkNamesActual.get(i) + ", Expected link: " + linkNames.get(i));
-			} else {
-				Reporter.info(
-						"Failure! Actual link: " + linkNamesActual.get(i) + ", Expected link: " + linkNames.get(i));
-			}
-		}
-
 		return linkNamesActual.equals(linkNames);
 	}
 

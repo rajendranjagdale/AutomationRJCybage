@@ -1,0 +1,6 @@
+[2025-09-18 19:10:49] [INFO] ListenerClass - :::::::::::::::: Starting with test case (1) : testLinksCountOnHomePage ::::::::::::::::
+[2025-09-18 19:10:50] [INFO] ListenerClass - :::::::::::::::: Test pass : testLinksCountOnHomePage ::::::::::::::::
+[2025-09-18 19:10:58] [INFO] ListenerClass - :::::::::::::::: Starting with test case (2) : testABTestingLinkNavigation ::::::::::::::::
+[2025-09-18 19:11:00] [INFO] ListenerClass - :::::::::::::::: Test pass : testABTestingLinkNavigation ::::::::::::::::
+[2025-09-18 19:11:04] [INFO] ListenerClass - :::::::::::::::: Starting with test case (3) : testFileUpload ::::::::::::::::
+[2025-09-18 19:11:17] [INFO] ListenerClass - :::::::::::::::: Test pass : testFileUpload ::::::::::::::::

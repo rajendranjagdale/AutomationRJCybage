@@ -41,7 +41,6 @@ public class HomePageTest extends BaseTest {
 		// Navigate back to Home page
 		homePage.navigateBack();
 		Assert.assertEquals(homePage.getPageTitle(), "The Internet");
-		System.out.println("Test executed successfully!");
 	}
 
 	@Test(priority = 3, groups = { "Smoke", "Regression" }, description = "The test method to check the file upload.")
@@ -54,7 +53,6 @@ public class HomePageTest extends BaseTest {
 		// Verify file upload and navigate back to Home page
 		homePage.uploadFile();
 		homePage.navigateBack();
-		System.out.println("Test executed successfully!");
 	}
 
 	@Test(priority = 4, enabled = false, groups = {
@@ -75,6 +73,5 @@ public class HomePageTest extends BaseTest {
 
 		// Navigate back to Home page
 		homePage.navigateBack();
-		System.out.println("Test executed successfully!");
 	}
 }

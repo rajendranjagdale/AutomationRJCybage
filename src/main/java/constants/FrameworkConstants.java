@@ -1,6 +1,11 @@
-package framework;
+package constants;
 
 import java.io.File;
+
+/**
+ * This class to provide the project level constants including the framework
+ * level file path
+ */
 
 public class FrameworkConstants {
 

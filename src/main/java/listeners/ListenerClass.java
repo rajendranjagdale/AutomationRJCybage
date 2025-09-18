@@ -1,32 +1,41 @@
 package listeners;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ISuiteListener;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 public class ListenerClass implements ITestListener, ISuiteListener {
 
+	public static final Logger logs = LogManager.getLogger(ListenerClass.class);
 	public static int testCount = 1;
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Test Started: " + result.getName());
+		Reporter.log(":::::::::::::::: Starting with test case (" + testCount + ") : " + result.getName()
+				+ " ::::::::::::::::");
+		logs.info(":::::::::::::::: Starting with test case (" + testCount + ") : " + result.getName()
+				+ " ::::::::::::::::");
 		testCount++;
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test Passed: " + result.getName());
+		Reporter.log(":::::::::::::::: Test pass : " + result.getName() + " ::::::::::::::::");
+		logs.info(":::::::::::::::: Test pass : " + result.getName() + " ::::::::::::::::");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Test Failed: " + result.getName());
+		Reporter.log(":::::::::::::::: Test failed : " + result.getName() + " ::::::::::::::::");
+		logs.info(":::::::::::::::: Test pass : " + result.getName() + " ::::::::::::::::");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("Test Skipped: " + result.getName());
+		Reporter.log(":::::::::::::::: Test skipped : " + result.getName() + " ::::::::::::::::");
+		logs.info(":::::::::::::::: Test pass : " + result.getName() + " ::::::::::::::::");
 	}
-
 }
