@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<!-- Report Details -->
+		<reportName>Automation Test Results</reportName>
+		<documentTitle>Demo Project Test Report</documentTitle>
+		<encoding>UTF-8</encoding>
+		<protocol>HTTPS</protocol>
+
+		<!-- Theme: STANDARD or DARK -->
+		<theme>STANDARD</theme>
+
+		<!-- Chart settings -->
+		<timelineChart>true</timelineChart>
+		<analysisStrategy>CLASS</analysisStrategy>
+
+		<!-- Custom CSS / JS (optional) -->
+		<css>
+			body { font-family: Arial, sans-serif; }
+		</css>
+		<js>
+			console.log("Extent Report loaded with custom config!");
+		</js>
+	</configuration>
+</extentreports>

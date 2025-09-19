@@ -8,6 +8,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.helpers.Reporter;
 
+/**
+ * This class defines the WebDriver UI action methods like Click, Set input
+ * values
+ */
 public class DriverLibrary {
 
 	public static void setExplicitWait(int seconds) {

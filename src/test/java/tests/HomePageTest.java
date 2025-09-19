@@ -6,6 +6,9 @@ import pages.HomePage;
 import testdata.Data;
 import web.DriverFactory;
 
+/**
+ * This class list the test cases from the Home page of the application
+ */
 public class HomePageTest extends BaseTest {
 
 	@Test(priority = 1, groups = {

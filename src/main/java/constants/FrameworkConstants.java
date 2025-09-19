@@ -1,7 +1,5 @@
 package constants;
 
-import java.io.File;
-
 /**
  * This class to provide the project level constants including the framework
  * level file path
@@ -15,9 +13,11 @@ public class FrameworkConstants {
 
 	private static final int EXPLICIT_WAIT = 20;
 
-	private static final String RESULTS_FOLDER_PATH = ROOT_PATH + File.separator + "results" + File.separator;
+	private static final String RESULTS_FOLDER_PATH = ROOT_PATH + "/results/";
 
-	private static final String CONFIG_FILE_PATH = ROOT_PATH + File.separator + "results" + File.separator;
+	private static final String CONFIG_FILE_PATH = ROOT_PATH + "/src/test/resources/testdata/config.properties";
+
+	private static final String EXTENT_CONFIG_FILE_PATH = ROOT_PATH + "/src/test/resources/extent-config.xml";
 
 	/**
 	 * The method to return the root path of the project folder
@@ -62,5 +62,14 @@ public class FrameworkConstants {
 	 */
 	public static String getConfigFilePath() {
 		return CONFIG_FILE_PATH;
+	}
+
+	/**
+	 * The method to return the extent config file path
+	 * 
+	 * @return the extent config file path string
+	 */
+	public static String getExtentConfigFilePath() {
+		return EXTENT_CONFIG_FILE_PATH;
 	}
 }
