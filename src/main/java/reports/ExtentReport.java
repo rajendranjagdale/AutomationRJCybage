@@ -71,11 +71,10 @@ public class ExtentReport {
 
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet("Test Results");
-
 		XSSFRow headerRow = sheet.createRow(0);
 		headerRow.createCell(0).setCellValue("Sr. No.");
-		headerRow.createCell(0).setCellValue("Test Case Name");
-		headerRow.createCell(0).setCellValue("Status");
+		headerRow.createCell(1).setCellValue("Test Case Name");
+		headerRow.createCell(2).setCellValue("Status");
 
 		Set<ITestResult> passTests = context.getPassedTests().getAllResults();
 		Set<ITestResult> failTests = context.getFailedTests().getAllResults();
@@ -104,6 +103,6 @@ public class ExtentReport {
 		XSSFRow row = sheet.createRow(rowNum);
 		row.createCell(0).setCellValue(rowNum);
 		row.createCell(1).setCellValue(result.getMethod().getMethodName());
-		row.createCell(2).setCellValue(result.getStatus());
+		row.createCell(2).setCellValue(status);
 	}
 }
